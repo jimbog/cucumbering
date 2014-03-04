@@ -7,5 +7,5 @@ When(/^I add (\d+) and (\d+)$/) do |arg1, arg2|
 end
 
 Then(/^the result should be (\d+)$/) do |arg1|
-  @result.should == arg1.to_i
+  expect(@result).to eq(arg1.to_i)
 end
