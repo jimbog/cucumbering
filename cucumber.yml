@@ -1,0 +1,4 @@
+default: -r lib -r features
+unit: --format progress -r lib -r features
+html: --format html -o cucumber.html -r lib -r features
+wip: --tags @wip --wip
